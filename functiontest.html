@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html class="no-js" lang="de">
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	
+	$deposit = 12;
+	function price($diff) {
+
+		$fullDays = Math.floor($diff / 86400);
+		$leftMinutes = Math.floor($diff / 60) - ($fullDays * 1440);
+
+		// TAGESPREIS: 3,00 € pro vollem Tag
+		$daysPrice = $fullDays*3;
+
+		// STUNDENPREIS: 0,39 € pro Stunde + ggf. 0,90 € Grundgebühr
+		$minutesPrice = $leftMinutes * (.39 / 60);
+		if($fullDays == 0) $minutesPrice += .9;
+		if($minutesPrice > 3) $minutesPrice = 3;
+
+		// GESAMTPREIS
+		$price = $daysPrice + $minutesPrice;
+		
+		// KAUTION prüfen
+		if ($price > $deposit) $price = $deposit;
+
+		return $price.toFixed(2);
+	}
+
+	for ($mins = 0; $mins <= 60*24*5; $mins += 5) {
+	  	document.write($mins+" Minuten: "+price($mins*60)+"<br>");
+	}
+	</script>
+</body>
+</html>
+
