@@ -25,26 +25,6 @@ $myDataChanged = false;
 
 $deposit = 12;
 
-// function price($diff) {
-// 	global $deposit;
-// 	$minutes = floor($diff / 60);
-// 	$price = .9 + .39 * $minutes / 60;
-// 	if ($price > 3) {
-// 		// calculate by days
-// 		$days = $minutes / 60 / 24;
-// 		if ($days < 1) $days = 1;
-// 		$floor = floor($days);
-// 		$price = 3 + ($floor - 1);
-// 		$rest = $days - $floor;
-// 		$restPrice = .39 * $rest * 24;
-// 		if ($restPrice > 1) $restPrice = 1;
-// 		$price += $restPrice;
-// 	}
-	
-// 	if ($price > $deposit) $price = $deposit;
-// 	return $price;
-// }
-
 function price($diff) {
 	global $deposit;
 	
@@ -315,23 +295,29 @@ if ($myDataChanged) file_put_contents('data/'.$user.'.json', json_encode($myData
 				<label class="mdl-textfield__label" for="akkunr">Akku Nr.</label>
 				<span class="mdl-textfield__error">Eingabe ist keine Zahl!</span>
 			</div>
-
+			<span>Welches Zubehör wird ausgegeben?</span>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-1" class="mdl-radio__button" name="device" value="1" checked>
-					<span class="mdl-radio__label">Android</span>
+					<span class="mdl-radio__label">nur Kabel</span>
 				</label>
 			</p>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-2" class="mdl-radio__button" name="device" value="2">
-					<span class="mdl-radio__label">iPhone</span>
+					<span class="mdl-radio__label">Kabel + iOS-Adapter</span>
+				</label>
+			</p>
+			<p>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+					<input type="radio" id="option-2" class="mdl-radio__button" name="device" value="4">
+					<span class="mdl-radio__label">Kabel + USB-C-Adapter</span>
 				</label>
 			</p>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-3" class="mdl-radio__button" name="device" value="3">
-					<span class="mdl-radio__label">ohne Kabel</span>
+					<span class="mdl-radio__label">kein Kabel, kein Adapter</span>
 				</label>
 			</p>
 
@@ -363,11 +349,24 @@ if ($myDataChanged) file_put_contents('data/'.$user.'.json', json_encode($myData
 			<div id="adapter-wrapper">
 				<div>iOS-Adapter</div>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect available">
-					<input type="radio"class="mdl-radio__button" name="adapter-options" value="1">
+					<input type="radio" class="mdl-radio__button" name="iOS-options" value="1">
 					<span class="mdl-radio__label">vorhanden</span>
 				</label><div class="gap"></div>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect missing">
-					<input type="radio" class="mdl-radio__button" name="adapter-options" value="0">
+					<input type="radio" class="mdl-radio__button" name="iOS-options" value="0">
+					<span class="mdl-radio__label">fehlt</span>
+				</label>
+				<br> 
+			</div>
+
+			<div id="adapter-wrapper">
+				<div>USB-C-Adapter</div>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect available">
+					<input type="radio" class="mdl-radio__button" name="USBC-options" value="1">
+					<span class="mdl-radio__label">vorhanden</span>
+				</label><div class="gap"></div>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect missing">
+					<input type="radio" class="mdl-radio__button" name="USBC-options" value="0">
 					<span class="mdl-radio__label">fehlt</span>
 				</label>
 				<br> 
