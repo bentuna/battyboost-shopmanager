@@ -295,33 +295,30 @@ if ($myDataChanged) file_put_contents('data/'.$user.'.json', json_encode($myData
 				<label class="mdl-textfield__label" for="akkunr">Akku Nr.</label>
 				<span class="mdl-textfield__error">Eingabe ist keine Zahl!</span>
 			</div>
-			<span>Welches Zubehör wird ausgegeben?</span>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-1" class="mdl-radio__button" name="device" value="1" checked>
-					<span class="mdl-radio__label">nur Kabel</span>
+					<span class="mdl-radio__label">nur <b>Kabel</b></span>
 				</label>
 			</p>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-2" class="mdl-radio__button" name="device" value="2">
-					<span class="mdl-radio__label">Kabel + iOS-Adapter</span>
+					<span class="mdl-radio__label">Kabel + <b>iOS</b> Adapter</span>
 				</label>
 			</p>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-2" class="mdl-radio__button" name="device" value="4">
-					<span class="mdl-radio__label">Kabel + USB-C-Adapter</span>
+					<span class="mdl-radio__label">Kabel + <b>USB-C</b> Adapter</span>
 				</label>
 			</p>
 			<p>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
 					<input type="radio" id="option-3" class="mdl-radio__button" name="device" value="3">
-					<span class="mdl-radio__label">kein Kabel, kein Adapter</span>
+					<span class="mdl-radio__label"><b>kein</b> Zubehör</span>
 				</label>
 			</p>
-
-			<div class="info-text">Bitte iOS-Adapter an Kunden ausgeben.</div>
 		</div>
 		<div class="mdl-dialog__actions">
 			<input type="submit" class="mdl-button submit mdl-button--colored mdl-js-button mdl-button--raised" value="Buchen">
