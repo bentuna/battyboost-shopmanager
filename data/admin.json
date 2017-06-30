@@ -1,25 +1,25 @@
 {
     "lend": {
-        "2": {
-            "id": 345,
-            "device": 3,
-            "date": "21.06.17",
-            "time": "21:45",
-            "ts": 1498074318
-        },
-        "3": {
-            "id": 86,
+        "5": {
+            "id": 777,
             "device": 2,
-            "date": "22.06.17",
-            "time": "20:05",
-            "ts": 1498154749
+            "date": "23.06.17",
+            "time": "22:57",
+            "ts": 1498251449
         },
-        "4": {
+        "6": {
             "id": 55,
             "device": 1,
             "date": "23.06.17",
-            "time": "21:17",
-            "ts": 1498245450
+            "time": "23:10",
+            "ts": 1498252207
+        },
+        "8": {
+            "id": 1234,
+            "device": 0,
+            "date": "30.06.17",
+            "time": "14:41",
+            "ts": 1498826486
         }
     },
     "history": [
@@ -228,6 +228,204 @@
             "rtime": "22:35",
             "rts": 1498077338,
             "price": "3,22",
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 55,
+            "device": 1,
+            "date": "23.06.17",
+            "time": "21:17",
+            "ts": 1498245450,
+            "rdate": "23.06.17",
+            "rtime": "23:13",
+            "rts": 1498252416,
+            "price": "1,65",
+            "cable": "yes",
+            "adapter": "no"
+        },
+        {
+            "id": 1337,
+            "device": 3,
+            "date": "27.06.17",
+            "time": "22:12",
+            "ts": 1498594355,
+            "rdate": "27.06.17",
+            "rtime": "22:17",
+            "rts": 1498594668,
+            "price": "4,43",
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 345,
+            "device": 3,
+            "date": "21.06.17",
+            "time": "21:45",
+            "ts": 1498074318,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": 12,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 86,
+            "device": 2,
+            "date": "22.06.17",
+            "time": "20:05",
+            "ts": 1498154749,
+            "rdate": "Nie",
+            "rtime": "",
+            "price": null,
+            "cable": "no",
+            "adapter": "no"
+        },
+        {
+            "id": 123,
+            "device": 1,
+            "date": "30.06.17",
+            "time": "14:25",
+            "ts": 1498825553,
+            "rdate": "30.06.17",
+            "rtime": "14:27",
+            "rts": 1498825641,
+            "price": "0,00",
+            "cable": "yes",
+            "adapter": "no"
+        },
+        {
+            "id": 696,
+            "device": 1,
+            "date": "28.06.17",
+            "time": "00:57",
+            "ts": 1498604276,
+            "rdate": "30.06.17",
+            "rtime": "14:28",
+            "rts": 1498825739,
+            "price": "9,00",
+            "cable": "yes",
+            "adapter": "no"
+        },
+        {
+            "id": 12345,
+            "device": 3,
+            "date": "27.06.17",
+            "time": "22:57",
+            "ts": 1498597056,
+            "rdate": "30.06.17",
+            "rtime": "14:39",
+            "rts": 1498826347,
+            "price": "10,50",
+            "cable": "yes",
+            "adapter": "no"
+        },
+        {
+            "id": 1234,
+            "device": 3,
+            "date": "30.06.17",
+            "time": "14:39",
+            "ts": 1498826371,
+            "rdate": "30.06.17",
+            "rtime": "14:41",
+            "rts": 1498826488,
+            "price": "4,41",
             "cable": "no",
             "adapter": "no"
         }
