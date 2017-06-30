@@ -1,24 +1,19 @@
 <?php
 function price($diff) {
 	global $deposit;
-	$desposit = 12;
+	$deposit = 12;
 	
-	$fullDays = floor($diff / 86400);
-	$leftMinutes = floor($diff / 60) - ($fullDays * 1440);
+	$Days = ceil($diff / 86400);
+	$Minutes = floor($diff / 60);
 
 	// TAGESPREIS: 3,00 € pro vollem Tag
-	$daysPrice = $fullDays*3;
-
-	// STUNDENPREIS: 0,39 € pro Stunde + ggf. 0,90 € Grundgebühr
-	$minutesPrice = $leftMinutes * (.39 / 60);
-	if($fullDays == 0) $minutesPrice += .9;
-	if($minutesPrice > 3) $minutesPrice = 3;
+	$daysPrice = $Days*3;
 
 	// GESAMTPREIS
-	$price = $daysPrice + $minutesPrice;
+	$price = $daysPrice;
 
 	// 2h kostenlos
-	if ($fullDays == 0 && $leftMinutes < 120) {
+	if ($Days == 1 && $Minutes < 120) {
 		$price = 0;
 	}
 

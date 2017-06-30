@@ -44,7 +44,8 @@ function initReturn() {
 							$submit = $d.find('.submit'),
 							$accessories = $cable.add($adapterIos).add($adapterUsbc);
 						$d.find('.accessories').hide();
-						if (device) {
+						
+						if (device > 0) {
 							$('#cable-wrapper').show();
 							check.push('cable');
 						}
