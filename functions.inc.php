@@ -1,6 +1,7 @@
 <?php
 function price($diff) {
 	global $deposit;
+	$desposit = 12;
 	
 	$fullDays = floor($diff / 86400);
 	$leftMinutes = floor($diff / 60) - ($fullDays * 1440);
