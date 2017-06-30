@@ -16,6 +16,11 @@ function price($diff) {
 	// GESAMTPREIS
 	$price = $daysPrice + $minutesPrice;
 
+	// 2h kostenlos
+	if ($fullDays == 0 && $leftMinutes < 120) {
+		$price = 0;
+	}
+
 	// KAUTION prüfen
 	if ($price > $deposit) $price = $deposit;
 
