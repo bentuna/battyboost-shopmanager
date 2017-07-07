@@ -1,7 +1,7 @@
 <?php
 function price($diff) {
 	global $deposit;
-	$deposit = 12;
+	$deposit = 9;
 
 	$Minutes = floor($diff / 60);
 

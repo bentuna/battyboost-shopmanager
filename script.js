@@ -28,7 +28,7 @@ function initReturn() {
 					if (data.success) {
 						var $d = $dialogs.filter('.dialog-giveback'),
 							time = data.time,
-							price = 12 - data.price,
+							price = 9 - data.price,
 							$price = $d.find('.price'),
 							$cable = $('[name="kabel-options"]'),
 							$adapterIos = $('[name="ios-options"]'),

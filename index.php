@@ -18,7 +18,7 @@ if (!$user || !preg_match('~^[\w-]+$~', $user) || !is_file('data/'.$user.'.json'
 </html>');
 }
 
-$deposit = 12;
+$deposit = 9;
 
 require_once 'functions.inc.php';
 
