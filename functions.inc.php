@@ -7,18 +7,10 @@ function price($diff) {
 
 	// GESAMTPREIS
 	$price = $daysPrice;
-
-	// 2h kostenlos
-	if ($Minutes < 120) {
-		$price = 0;
-	}
 	
-	// danach 3€ je angefangene 24h		
-	else {
-		$diff -= 120*60;
-		$Days = ceil($diff / 86400);
-		$price = $Days*3;
-	}
+	// danach 1€ je angefangene 24h		
+	$Days = ceil($diff / 86400);
+	$price = $Days*1;
 
 	// KAUTION prüfen
 	if ($price > $deposit) $price = $deposit;
