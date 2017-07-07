@@ -2,19 +2,22 @@
 function price($diff) {
 	global $deposit;
 	$deposit = 12;
-	
-	$Days = ceil($diff / 86400);
-	$Minutes = floor($diff / 60);
 
-	// TAGESPREIS: 3,00 € pro vollem Tag
-	$daysPrice = $Days*3;
+	$Minutes = floor($diff / 60);
 
 	// GESAMTPREIS
 	$price = $daysPrice;
 
 	// 2h kostenlos
-	if ($Days == 1 && $Minutes < 120) {
+	if ($Minutes < 120) {
 		$price = 0;
+	}
+	
+	// danach 3€ je angefangene 24h		
+	else {
+		$diff -= 120*60;
+		$Days = ceil($diff / 86400);
+		$price = $Days*3;
 	}
 
 	// KAUTION prüfen
